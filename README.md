@@ -122,9 +122,10 @@ Comfortably monitor your network traffic.
 
 <div align="center">
 
-![Jason's GitHub stats](https://github-readme-stats.vercel.app/api?username=jason081112&show_icons=true&theme=dark&hide_border=true)
+<img src="resources/stats.svg" width="420" alt="Jason's GitHub stats" />
+<img src="resources/top-langs.svg" width="420" alt="Top languages" />
 
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=jason081112&layout=compact&theme=dark&hide_border=true)
+<sub>Rendered locally by GitHub Actions · refreshed daily · no third-party image service</sub>
 
 </div>
 
