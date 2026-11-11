@@ -17,7 +17,7 @@
 
 You could describe me as —
 
-- 🤖 **companion AI builder** — building **Pre_Alpha**, a privacy-first companion AI: distill chat logs into a persona, run the persona engine in the cloud, and expose it through Web/PWA and an OpenAI-compatible API. P1 backend is complete; the distillation pipeline is next.
+- 🤖 **companion AI builder** — building **Pre_Alpha**, a privacy-first companion AI: distill chat logs into a persona, run the persona engine in the cloud, and expose it through Web/PWA and an OpenAI-compatible API. P0–P3 are complete; the Web interaction layer (P4) is in progress.
 - 🎓 **edtech builder** — puts technology and AI behind education: a gaokao essay evaluator that auto-detects **应用文 & 读后续写** and scores against the official rubric, plus an agent skill that distills a writer's style and recreates it in new text
 - 🎮 **game maker** — built *Nyan Hero*, a browser platformer with difficulty progression, multi-mode obstacles, and four playable characters
 - 🌍 **open-source translator** — contributed Simplified & Traditional Chinese to [Sniffnet](https://github.com/GyulyVGC/sniffnet) (41k+ ⭐), merged and added to the official contributors list
@@ -32,19 +32,18 @@ Distill chat logs into a persona, then run the persona engine in the cloud. Web/
 
 把聊天记录蒸馏成一个人格，引擎在云端运行；Web/PWA 优先，原始聊天记录不上传、不入库。
 
-**P1 backend complete · P1 后端已跑通**
+**P0–P3 complete · P4 in progress · P0–P3 完成，P4 进行中**
 
-- Email/password + invite auth, refresh tokens, per-user session isolation
-- User/IP rate limits and platform-vs-BYOK quota split
-- Multi-provider routing with fallback chains and encrypted BYOK keys
-- Externalized agent state with CAS persistence
-- OpenAI-compatible `POST /v1/chat/completions` (streaming + non-streaming), tested with the official `openai-python` SDK
+- **P1 backend** — invite auth and per-user sessions, rate limits, multi-provider routing with encrypted BYOK keys, externalized state, OpenAI-compatible `POST /v1/chat/completions`
+- **P2 distillation** — Distilly pipeline from user-exported chat logs to a six-layer persona; synthetic colleague and relationship goldens with structure and privacy guards
+- **P3 bridge** — `profile2soul` mapping, SOUL.md export, style seeds, drives and host-side memory loading
+- **P4 interaction** — single-file Web chat, real streaming over WebSocket, multi-segment messages, persona CRUD API, chat history export. Persona wizard and per-user storage isolation are next.
 
-[Repo](https://github.com/jason081112/Pre_Alpha) · [Progress board](https://github.com/users/jason081112/projects/1) · [OpenAI compatibility notes](https://github.com/jason081112/Pre_Alpha/blob/main/docs/p1-68-openai-compat.md)
+[Repo](https://github.com/jason081112/Pre_Alpha) · [Project homepage](https://jason081112.github.io/Pre_Alpha/) · [Progress board](https://github.com/users/jason081112/projects/1)
 
-`Python` `FastAPI` `OpenAI-compatible` `WIP`
+`Python` `FastAPI` `Web/PWA` `OpenAI-compatible` `WIP`
 
-> **Next:** P2 — chat-log distillation pipeline and persona profile.
+> **Next:** P4 — persona setup wizard, per-user persona storage isolation, and mobile polish.
 
 ---
 
